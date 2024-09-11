@@ -1,24 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta tags for character encoding and responsiveness -->
+    <meta charset="UTF-8"> <!-- Specifies character encoding (UTF-8) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures proper scaling on mobile devices -->
+
+    <!-- Title of the page -->
     <title>Real Time Tracking</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" integrity="sha512-h9FcoyWjHcOcmEVkxOfTLnmZFWIH0iZhZT1H2TbOq55xssQGEJHEaIm+PgoUaZbRvQTNTluNOEfb1ZRy6D3BOw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Linking external CSS for custom styling -->
+    <link rel="stylesheet" href="/css/style.css"> <!-- External stylesheet for page-specific styles -->
+
+    <!-- Linking Leaflet CSS for map display -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" 
+          integrity="sha512-h9FcoyWjHcOcmEVkxOfTLnmZFWIH0iZhZT1H2TbOq55xssQGEJHEaIm+PgoUaZbRvQTNTluNOEfb1ZRy6D3BOw==" 
+          crossorigin="anonymous" 
+          referrerpolicy="no-referrer" /> <!-- Leaflet is a JavaScript library for interactive maps -->
 </head>
 <body>
-    <div id="map">
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" integrity="sha512-puJW3E/qXDqYp9IfhAI54BJEaWIfloJ7JWs7OeD5i6ruC9JZL1gERT1wjtwXFlh7CjE7ZJ+/vcRZRkIYIb6p4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdn.socket.io/4.7.5/socket.io.min.js" integrity="sha384-2huaZvOR9iDzHqslqwpR87isEmrfxqyWOF7hr7BY6KG0+hVKLoEXMPUJw3ynWuhO" crossorigin="anonymous"></script>
-        <script src="/js/script.js"></script>
-    </div>
+    <!-- Map container where the Leaflet map will be displayed -->
+    <div id="map"></div> <!-- 'map' div will be used by Leaflet to display the map -->
+
+    <!-- Including Leaflet JavaScript library from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" 
+            integrity="sha512-puJW3E/qXDqYp9IfhAI54BJEaWIfloJ7JWs7OeD5i6ruC9JZL1gERT1wjtwXFlh7CjE7ZJ+/vcRZRkIYIb6p4g==" 
+            crossorigin="anonymous" 
+            referrerpolicy="no-referrer"></script> <!-- Leaflet JavaScript library for map functionality -->
+
+    <!-- Including Socket.io library from CDN for real-time communication -->
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js" 
+            integrity="sha384-2huaZvOR9iDzHqslqwpR87isEmrfxqyWOF7hr7BY6KG0+hVKLoEXMPUJw3ynWuhO" 
+            crossorigin="anonymous"></script> <!-- Socket.io for enabling WebSocket communication -->
+
+    <!-- Including external JavaScript file for custom client-side logic -->
+    <script src="/js/script.js"></script> <!-- External JavaScript file where the client-side logic for map and Socket.io will reside -->
 </body>
 </html>
 
-
-
+<!-- The page includes the basic HTML structure to set up a real-time tracking application using Leaflet for map 
+functionality and Socket.io for real-time communication.
+The #map element is a placeholder for the interactive map, and Leaflet CSS/JS is included to render and control the map.
+Socket.io is included to facilitate real-time data transfer between the server and clients, 
+allowing real-time updates to be shown on the map.
+Custom styles and logic are provided via external CSS (/css/style.css) and JavaScript -->
 
 
 <!--  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>

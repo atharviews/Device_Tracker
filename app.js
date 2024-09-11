@@ -38,5 +38,3 @@ app.get("/", function (req, res) { // Handling GET requests to the root URL
 server.listen(3000, function() {
     console.log("Server is running on port 3000"); // Logging when the server starts
 });
-
-
