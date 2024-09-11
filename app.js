@@ -38,3 +38,10 @@ app.get("/", function (req, res) { // Handling GET requests to the root URL
 server.listen(3000, function() {
     console.log("Server is running on port 3000"); // Logging when the server starts
 });
+
+
+
+// To start the server
+// 1) lsof -i :3000
+// 2)  kill -9 PID_ID
+// 3) npx nodemon app.js
