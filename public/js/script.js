@@ -66,3 +66,7 @@ socket.on("user-disconnected", (id) => {
 // Real-Time Tracking: When the server sends location updates via the "receive-location" event, 
 // the corresponding marker is updated or added to the map. When a user disconnects, 
 // their marker is removed from the map via the "user-disconnected" event.
+
+
+// wghat is socket io ?
+//  what is error handling?
